@@ -1,5 +1,5 @@
 {
-  "name": "module-docs",
+  "name": "@joshwillik/js-doc",
   "version": "0.1.0",
   "description": "Automatically generate documentation for a JS module",
   "main": "lib/index.js",
