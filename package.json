@@ -1,0 +1,15 @@
+{
+  "name": "module-docs",
+  "version": "0.1.0",
+  "description": "Automatically generate documentation for a JS module",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "./scripts/test"
+  },
+  "keywords": [
+    "module",
+    "documentation"
+  ],
+  "author": "Josh Vanderwillik <josh@willik.ca>",
+  "license": "ISC"
+}

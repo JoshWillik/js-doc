@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+const module_docs = require('..')
+const assert = require('assert')
+const self_docs =
+`# lib
+
+## module_name (file_path)
+
+## file_docs (file_path)`
+async function main(){
+	let docs = await module_docs.file_docs(__dirname+'/../lib/index.js')
+	assert.equal(docs, self_docs)
+}
+if (!module.parent) {
+	main()
+	.then(() => console.log('All good'))
+	.catch(e => {
+		console.error(e)
+		process.exit(1)
+	})
+}
